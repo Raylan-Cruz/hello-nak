@@ -35,19 +35,31 @@
             text-shadow: 3px 3px 8px black;
         }
 
-       .left-gif {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 180px;
-    transform: scaleX(-1);
-}
-
+      .left-gif,
 .right-gif {
     position: absolute;
     bottom: 20px;
+    width: min(180px, 28vw);
+}
+
+.left-gif {
+    left: 20px;
+}
+
+.right-gif {
     right: 20px;
-    width: 180px;
+}
+
+        @media (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .left-gif,
+    .right-gif {
+        width: 100px;
+        bottom: 10px;
+    }
 }
     </style>
 </head>
